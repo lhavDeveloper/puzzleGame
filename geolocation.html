@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/geolocation.js"></script>
+
+</head>
+<body onload="init()">
+    
+    <!-- header containing links to the 2 website pages-->
+    <header>
+        <a href="puzzle.html">Puzzle</a>
+        <a href="geolocation.html">Geolocation</a>
+    </header>
+
+    <!-- section where the details about the user's address is displayed -->
+    <div>
+        <h1>You are from <span id="userAddress"></span></h1>
+        <h2>Latitude : <span id="userLatitude"></span></h2>
+        <h2>Longitude : <span id="userLongitude"></span></h2>
+    </div>
+
+    <!-- The div below will hold the google maps-->
+    <div id="map"></div>
+
+<!-- load google maps API script -->
+<script src="https://maps.googleapis.com/maps/api/js?v=3"
+  type="text/javascript"></script>
+
+</body>
+</html>

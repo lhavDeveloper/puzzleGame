@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puzzle</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/puzzle.js"></script>
+
+</head>
+<body onload="init()">
+
+    <!-- header containing links to the 2 website pages-->
+    <header>
+        <a href="puzzle.html">Puzzle</a>
+        <a href="geolocation.html">Geolocation</a>
+    </header>
+
+    <!-- This section contains the puzzle game -->
+    <section id="gameContainer" class="sections">
+
+        <!-- The following four image tags are the four puzzle pieces-->
+        <div id="container">
+            <img class="puzzlePieces" id="piece_1" src="images/dog_1.jpg" draggable="true" alt="puzzle piece"/>
+            <img class="puzzlePieces" id="piece_3" src="images/dog_3.jpg" draggable="true" alt="puzzle piece"/>
+            <img class="puzzlePieces" id="piece_2" src="images/dog_2.jpg" draggable="true" alt="puzzle piece"/>
+            <img class="puzzlePieces" id="piece_4" src="images/dog_4.jpg" draggable="true" alt="puzzle piece"/>
+        </div>
+
+        <!-- The followinf four child divs are the target divs which make up the puzzleboard-->
+        <div id="puzzleBoard">
+            <div id="target_1" class="puzzleBoardPieces"></div>
+            <div id="target_2" class="puzzleBoardPieces"></div>
+            <div id="target_3" class="puzzleBoardPieces"></div>
+            <div id="target_4" class="puzzleBoardPieces"></div>
+        </div>
+
+    </section>
+
+    <!-- This section contains the original uncut picture for the user's reference -->
+    <section id="finalImageSection" class="sections">
+        <img  id="finalImage" src="images/dog.jpg" alt="final image"/>
+    </section>
+
+
+</body>
+</html>
